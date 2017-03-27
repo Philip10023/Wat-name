@@ -1,0 +1,25 @@
+.callout{
+  background-color: #fbeec2;
+  color: #4a4857;
+  border-color: #4a4857;
+  border-style: solid;
+  border-radius: 20px;
+}
+
+.row{
+background-color: #fbeec2;
+color: #4a4857;
+border-color: #4a4857;
+border-style: solid;
+border-radius: 20px;
+
+}
+
+.submit:hover{
+  background-color: #fbeec2;
+  color: #4a4857
+}
+.clear:hover{
+  background-color: #fbeec2;
+  color: #4a4857
+}
