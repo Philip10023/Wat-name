@@ -1,0 +1,23 @@
+<h1>Meetups</h1>
+<%list = @meetups.sort_by{ |m| m.name.downcase } %>
+<% list.each do |meetup| %>
+  <h3><a href='/meetups/<%=meetup.id%>'><%= meetup.name %></a></h3>
+<% end %>
+
+<div>
+    <h1>Create a Meetup</h1>
+
+    <form class= "" action="/meetups" method="post">
+    <p><label for="">Meetup Name</label>
+      <input type="text" name="meetups" id="meetups"></p>
+      <p>  <label for="description">Description:</label>
+        <input type="text" name="description" id="description"></p>
+      <p>  <label for="mid">Meetup:ID</label>
+        <input type="text" name="mid" id="mid"> </p>
+        <p><label for="attendees">Attendees</label>
+        <input type="text" name="attendees" id="attendees"></p>
+
+      <p> <input type="submit"> </p>
+
+    </form>
+</div>
